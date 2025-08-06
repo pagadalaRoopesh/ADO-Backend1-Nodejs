@@ -17,11 +17,11 @@ spec:
     spec:
       containers:
       - name: backend-api
-        image: perseverance01.azurecr.io/perseverance-project:VERSION
+        image: persevrance01.azurecr.io/persevrance-project:VERSION
         imagePullPolicy: Always
         env:
           - name: DB_CONN_STR
-            value: mongodb://mongodb-svc:27017/perseverance?directConnection=true
+            value: mongodb://mongodb-svc:27017/persevrance?directConnection=true
           - name: DB_USERNAME
             valueFrom:
               secretKeyRef:
